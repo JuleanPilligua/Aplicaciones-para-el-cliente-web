@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Clientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h2>Registro de Cliente</h2>
+
+    <form id="formulario">
+
+      <div class="campo">
+        <label for="cedula">Cédula (10 dígitos):</label>
+        <input type="text" id="cedula" maxlength="10" placeholder="13XXXXXXXX">
+        <span class="error" id="errCedula"></span>
+      </div>
+
+      <div class="campo">
+        <label for="nombre">Nombre (máx 30 caracteres):</label>
+        <input type="text" id="nombre" maxlength="30" placeholder="Nombre completo">
+        <span class="error" id="errNombre"></span>
+      </div>
+
+      <div class="campo">
+        <label for="direccion">Dirección (máx 50 caracteres):</label>
+        <input type="text" id="direccion" maxlength="50" placeholder="Calle...">
+        <span class="error" id="errDireccion"></span>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono Celular (10 dígitos):</label>
+        <input type="text" id="telefono" maxlength="10" placeholder="09XXXXXXXX">
+        <span class="error" id="errTelefono"></span>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="text" id="correo" placeholder="usuario@gmail.com">
+        <span class="error" id="errCorreo"></span>
+      </div>
+
+      <div class="botones">
+        <button type="submit">Registrar</button>
+        
+      </div>
+
+      <p class="exito" id="msgExito"></p>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
