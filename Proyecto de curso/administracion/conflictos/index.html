@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflictos Detectados - ULEAM Horarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-nombre-sidebar">
+                <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
+                <div class="texto-sidebar-header">
+                    <p class="p-nombre-sidebar">UL ULEAM</p>
+                    <p class="p-sub-sidebar">Horarios</p>
+                </div>
+            </div>
+            <span class="badge-sidebar">ADMIN PANEL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                Usuarios
+            </a>
+            <a href="#" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h12"/></svg>
+                Materias
+            </a>
+            <a href="#" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                Periodos
+            </a>
+            <a href="#" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.066 2.573c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.573 1.066c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.066 -2.573c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37a1.724 1.724 0 0 0 2.573 -1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+                Configuración
+            </a>
+            <a href="#" class="nav-item activo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                Horarios
+            </a>
+        </nav>
+
+        <div class="sidebar-usuario">
+            <div class="avatar-usuario">AZ</div>
+            <div class="info-usuario">
+                <p class="p-nombre-usuario">Ana Zambrano</p>
+                <p class="p-rol-usuario">Administrador</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+        </div>
+
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal">
+
+        <!-- Encabezado Principal -->
+        <header class="header-principal">
+            <div class="header-info">
+                <h1 class="titulo-pagina">Conflictos Detectados</h1>
+                <p class="subtitulo-pagina">Revisa y resuelve incompatibilidades antes de publicar el horario.</p>
+            </div>
+            <div class="header-acciones">
+                <span class="badge-total-conflictos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"/></svg>
+                    3 conflictos detectados
+                </span>
+            </div>
+        </header>
+
+        <!-- Tarjetas de Estadísticas -->
+        <section class="seccion-estadisticas">
+            <div class="tarjeta-estadistica">
+                <div class="icono-estadistica icono-profesores">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                </div>
+                <div class="valor-estadistica">1</div>
+                <div class="etiqueta-estadistica">Profesores</div>
+            </div>
+
+            <div class="tarjeta-estadistica">
+                <div class="icono-estadistica icono-aulas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/><path d="M9 9h1"/><path d="M9 13h1"/><path d="M9 17h1"/><path d="M14 9h1"/><path d="M14 13h1"/><path d="M14 17h1"/></svg>
+                </div>
+                <div class="valor-estadistica">1</div>
+                <div class="etiqueta-estadistica">Aulas</div>
+            </div>
+
+            <div class="tarjeta-estadistica">
+                <div class="icono-estadistica icono-paralelos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
+                </div>
+                <div class="valor-estadistica">1</div>
+                <div class="etiqueta-estadistica">Paralelos</div>
+            </div>
+        </section>
+
+        <!-- Barra de Filtros y Acciones -->
+        <section class="barra-filtros">
+            <div class="pestanas-filtro">
+                <button class="pestana-filtro activo">Todos (3)</button>
+                <button class="pestana-filtro">Alto (2)</button>
+                <button class="pestana-filtro">Medio (1)</button>
+            </div>
+            <a href="#" class="enlace-reintentar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -5v5h5"/><path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 5v-5h-5"/></svg>
+                Reintentar validación
+            </a>
+        </section>
+
+        <!-- Listado de Conflictos -->
+        <section class="lista-conflictos">
+
+            <!-- Conflicto 1: Profesor -->
+            <article class="tarjeta-conflicto prioridad-alta">
+                <div class="contenido-conflicto">
+                    <div class="cabecera-conflicto">
+                        <h2 class="titulo-conflicto">Conflicto de Profesor</h2>
+                        <span class="badge-severidad severidad-alta">Alto</span>
+                    </div>
+                    <p class="descripcion-conflicto">
+                        Ing. María López está asignada a <strong>Programación Web (3ro A)</strong> y <strong>Base de Datos (4to B)</strong> el Martes de 09:00 a 10:00
+                    </p>
+                    <div class="metadatos-conflicto">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            Prioridad: alta
+                        </span>
+                        <span class="meta-separador">·</span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Detectado hace 5 min
+                        </span>
+                    </div>
+                </div>
+                <div class="accion-conflicto">
+                    <button class="boton-resolver">Resolver</button>
+                </div>
+            </article>
+
+            <!-- Conflicto 2: Aula -->
+            <article class="tarjeta-conflicto prioridad-alta">
+                <div class="contenido-conflicto">
+                    <div class="cabecera-conflicto">
+                        <h2 class="titulo-conflicto">Conflicto de Aula</h2>
+                        <span class="badge-severidad severidad-alta">Alto</span>
+                    </div>
+                    <p class="descripcion-conflicto">
+                        El laboratorio <strong>L-204</strong> está asignado a <strong>Redes I (5to A)</strong> y <strong>Sistemas Operativos (4to A)</strong> el Jueves de 10:00 a 11:00
+                    </p>
+                    <div class="metadatos-conflicto">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            Prioridad: alta
+                        </span>
+                        <span class="meta-separador">·</span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Detectado hace 8 min
+                        </span>
+                    </div>
+                </div>
+                <div class="accion-conflicto">
+                    <button class="boton-resolver">Resolver</button>
+                </div>
+            </article>
+
+            <!-- Conflicto 3: Paralelo -->
+            <article class="tarjeta-conflicto prioridad-media">
+                <div class="contenido-conflicto">
+                    <div class="cabecera-conflicto">
+                        <h2 class="titulo-conflicto">Conflicto de Paralelo</h2>
+                        <span class="badge-severidad severidad-media">Medio</span>
+                    </div>
+                    <p class="descripcion-conflicto">
+                        El paralelo <strong>3ro A</strong> tiene <strong>Programación Web</strong> y <strong>Matemática Discreta</strong> asignadas el Lunes de 07:00 a 08:00
+                    </p>
+                    <div class="metadatos-conflicto">
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            Prioridad: media
+                        </span>
+                        <span class="meta-separador">·</span>
+                        <span class="meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Detectado hace 12 min
+                        </span>
+                    </div>
+                </div>
+                <div class="accion-conflicto">
+                    <button class="boton-resolver">Resolver</button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Modal para Resolver Conflicto (Oculto por defecto) -->
+    <div class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-titulo">Resolver Incompatibilidad</h3>
+                <button class="boton-cerrar-modal" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-descripcion">Selecciona una alternativa para solucionar la superposición en el horario:</p>
+                <div class="opcion-resolucion">
+                    <input type="radio" id="reasignar-aula" name="resolucion" checked>
+                    <label for="reasignar-aula">Reasignar a otra aula disponible</label>
+                </div>
+                <div class="opcion-resolucion">
+                    <input type="radio" id="cambiar-horario" name="resolucion">
+                    <label for="cambiar-horario">Mover materia a otro bloque horario libre</label>
+                </div>
+                <div class="opcion-resolucion">
+                    <input type="radio" id="asignar-docente" name="resolucion">
+                    <label for="asignar-docente">Asignar docente sustituto calificado</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="boton-secundario">Cancelar</button>
+                <button class="boton-primario">Aplicar Solución</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

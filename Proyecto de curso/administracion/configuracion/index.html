@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-sidebar">
+                <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
+            </div>
+            <span class="badge-sidebar">ADMIN PANEL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="../dashboard-admin-completado/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>
+                Dashboard
+            </a>
+            <a href="../gestion-usuarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                Usuarios
+            </a>
+            <a href="../gestion-materias/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h12"/></svg>
+                Materias
+            </a>
+            <a href="../periodos/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                Periodos
+            </a>
+            <a href="#" class="nav-item activo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.066 2.573c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.573 1.066c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.066 -2.573c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37a1.724 1.724 0 0 0 2.573 -1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+                Configuración
+            </a>
+            <a href="../generacion-horarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                Horarios
+            </a>
+        </nav>
+
+        <div class="sidebar-usuario">
+            <div class="avatar-usuario">AZ</div>
+            <div class="info-usuario">
+                <p class="p-nombre-usuario">Ana Zambrano</p>
+                <p class="p-rol-usuario">Administrador</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+        </div>
+
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal">
+
+        <!-- Header principal -->
+        <header class="header-principal">
+            <div class="header-principal-info">
+                <h1 class="h1-header-principal">Configuración del Sistema</h1>
+                <p class="p-header-principal">Define la estructura académica y los bloques horarios</p>
+            </div>
+        </header>
+
+        <!-- Contenedor de configuración -->
+        <div class="contenedor-configuracion">
+
+            <!-- Fila superior: Dos tarjetas lado a lado -->
+            <div class="fila-tarjetas-dobles">
+
+                <!-- Tarjeta 1: Niveles -->
+                <section class="tarjeta-configuracion">
+                    <div class="cabecera-tarjeta">
+                        <div class="icono-tarjeta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                <polyline points="2 17 12 22 22 17"/>
+                                <polyline points="2 12 12 17 22 12"/>
+                            </svg>
+                        </div>
+                        <div class="titulos-tarjeta">
+                            <h2 class="titulo-tarjeta">Niveles</h2>
+                            <p class="subtitulo-tarjeta">Cantidad disponible para asignaturas</p>
+                        </div>
+                    </div>
+
+                    <div class="cuerpo-tarjeta">
+                        <label class="etiqueta-campo" for="input-niveles">Cantidad de niveles</label>
+                        <div class="fila-accion-input">
+                            <input type="number" id="input-niveles" class="input-texto" value="10" min="1" max="20">
+                            <button type="button" class="btn-primario">Guardar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tarjeta 2: Paralelos -->
+                <section class="tarjeta-configuracion">
+                    <div class="cabecera-tarjeta">
+                        <div class="icono-tarjeta">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 6h16"/>
+                                <path d="M4 12h16"/>
+                                <path d="M4 18h10"/>
+                            </svg>
+                        </div>
+                        <div class="titulos-tarjeta">
+                            <h2 class="titulo-tarjeta">Paralelos</h2>
+                            <p class="subtitulo-tarjeta">Letras habilitadas para cada nivel</p>
+                        </div>
+                    </div>
+
+                    <div class="cuerpo-tarjeta">
+                        <label class="etiqueta-campo">Paralelos activos</label>
+                        <div class="contenedor-badges-paralelos">
+                            <span class="badge-paralelo">
+                                A
+                                <button type="button" class="btn-remover-paralelo" aria-label="Remover paralelo A">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </span>
+                            <span class="badge-paralelo">
+                                B
+                                <button type="button" class="btn-remover-paralelo" aria-label="Remover paralelo B">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </span>
+                            <span class="badge-paralelo">
+                                C
+                                <button type="button" class="btn-remover-paralelo" aria-label="Remover paralelo C">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </span>
+                        </div>
+
+                        <div class="fila-accion-input fila-agregar-paralelo">
+                            <input type="text" id="input-nuevo-paralelo" class="input-texto" placeholder="Nueva letra" maxlength="2">
+                            <button type="button" class="btn-secundario-esquema">Agregar</button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Fila inferior: Tarjeta Horario (ancho completo) -->
+            <section class="tarjeta-configuracion tarjeta-completa">
+                <div class="cabecera-tarjeta">
+                    <div class="icono-tarjeta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="titulos-tarjeta">
+                        <h2 class="titulo-tarjeta">Horario</h2>
+                        <p class="subtitulo-tarjeta">Configura la jornada académica institucional</p>
+                    </div>
+                </div>
+
+                <div class="cuerpo-tarjeta">
+                    <!-- Tres campos en una fila -->
+                    <div class="grid-campos-horario">
+                        <div class="campo-grupo">
+                            <label class="etiqueta-campo" for="select-hora-inicio">Hora de inicio</label>
+                            <select id="select-hora-inicio" class="select-formulario">
+                                <option value="06:00">06:00</option>
+                                <option value="07:00" selected>07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                            </select>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label class="etiqueta-campo" for="select-hora-fin">Hora de fin</label>
+                            <select id="select-hora-fin" class="select-formulario">
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00" selected>18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+
+                        <div class="campo-grupo">
+                            <label class="etiqueta-campo" for="select-duracion-bloque">Duración del bloque</label>
+                            <select id="select-duracion-bloque" class="select-formulario">
+                                <option value="45 min">45 min</option>
+                                <option value="50 min">50 min</option>
+                                <option value="60 min" selected>60 min</option>
+                                <option value="90 min">90 min</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Sección de vista previa de bloques -->
+                    <div class="seccion-vista-previa">
+                        <div class="cabecera-vista-previa">
+                            <span class="etiqueta-campo">Vista previa de bloques generados</span>
+                            <span class="contador-bloques">12 bloques</span>
+                        </div>
+                        <div class="contenedor-pildoras-horario">
+                            <span class="pildora-hora">07:00</span>
+                            <span class="pildora-hora">08:00</span>
+                            <span class="pildora-hora">09:00</span>
+                            <span class="pildora-hora">10:00</span>
+                            <span class="pildora-hora">11:00</span>
+                            <span class="pildora-hora">12:00</span>
+                            <span class="pildora-hora">13:00</span>
+                            <span class="pildora-hora">14:00</span>
+                            <span class="pildora-hora">15:00</span>
+                            <span class="pildora-hora">16:00</span>
+                            <span class="pildora-hora">17:00</span>
+                            <span class="pildora-hora">18:00</span>
+                        </div>
+                    </div>
+
+                    <!-- Botón guardar al final a la derecha -->
+                    <div class="pie-tarjeta-horario">
+                        <button type="button" class="btn-primario btn-guardar-configuracion">Guardar Configuración</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Notificación Toast (oculta por defecto) -->
+        <div class="toast-notificacion">
+            <div class="toast-contenido">
+                <svg class="toast-icono-exito" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span class="toast-mensaje">Configuración guardada correctamente</span>
+            </div>
+            <button type="button" class="toast-btn-cerrar" aria-label="Cerrar notificación">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+    </main>
+
+</body>
+</html>

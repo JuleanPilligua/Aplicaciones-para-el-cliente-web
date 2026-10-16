@@ -1,0 +1,514 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    color: #202435;
+}
+
+/* ============================
+   Sidebar
+   ============================ */
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #1E1E2F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-logo-sidebar {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.badge-sidebar {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px 8px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #1E1E2F;
+    background-color: #F6C343;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 28px;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #A0AEC0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #2A2A3D;
+    color: #fff;
+}
+
+.nav-item.activo {
+    background-color: #2A2A3D;
+    color: #F6C343;
+    font-weight: 600;
+}
+
+.sidebar-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #2A2A3D;
+    margin-top: 16px;
+}
+
+.avatar-usuario {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #2E86AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.info-usuario {
+    flex: 1;
+}
+
+.p-nombre-usuario {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.p-rol-usuario {
+    font-size: 11px;
+    color: #A0AEC0;
+    margin: 0;
+}
+
+.icono-usuario-opciones {
+    color: #A0AEC0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ============================
+   Contenido Principal
+   ============================ */
+
+.contenido-principal {
+    margin-left: 220px;
+    padding: 32px 40px;
+    flex: 1;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Header principal */
+
+.header-principal {
+    margin-bottom: 24px;
+}
+
+.h1-header-principal {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #202435;
+}
+
+.p-header-principal {
+    font-size: 14px;
+    color: #6D7588;
+    margin: 4px 0 0 0;
+}
+
+/* ============================
+   Tarjetas de Configuración
+   ============================ */
+
+.contenedor-configuracion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+}
+
+.fila-tarjetas-dobles {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.fila-tarjetas-dobles .tarjeta-configuracion {
+    flex: 1;
+}
+
+.tarjeta-configuracion {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-completa {
+    width: 100%;
+}
+
+/* Cabecera de Tarjeta */
+
+.cabecera-tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.icono-tarjeta {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #E8F4FD;
+    color: #2E86AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.titulos-tarjeta {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-tarjeta {
+    font-size: 16px;
+    font-weight: 600;
+    color: #202435;
+    margin: 0;
+}
+
+.subtitulo-tarjeta {
+    font-size: 13px;
+    color: #6D7588;
+    margin: 2px 0 0 0;
+}
+
+/* Cuerpo de Tarjeta */
+
+.cuerpo-tarjeta {
+    display: flex;
+    flex-direction: column;
+}
+
+.etiqueta-campo {
+    font-size: 13px;
+    font-weight: 500;
+    color: #202435;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Inputs y Formularios */
+
+.fila-accion-input {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.input-texto {
+    height: 42px;
+    border: 1px solid #C8D1DD;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #202435;
+    box-sizing: border-box;
+    flex: 1;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-texto:focus {
+    outline: none;
+    border-color: #2E86AB;
+    box-shadow: 0 0 0 3px rgba(46, 134, 171, 0.15);
+}
+
+.select-formulario {
+    height: 42px;
+    border: 1px solid #C8D1DD;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #202435;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.select-formulario:focus {
+    outline: none;
+    border-color: #2E86AB;
+    box-shadow: 0 0 0 3px rgba(46, 134, 171, 0.15);
+}
+
+/* Botones */
+
+.btn-primario {
+    height: 42px;
+    background-color: #2E86AB;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-primario:hover {
+    background-color: #246B8A;
+}
+
+.btn-secundario-esquema {
+    height: 42px;
+    background-color: transparent;
+    color: #2E86AB;
+    border: 1.5px solid #2E86AB;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secundario-esquema:hover {
+    background-color: #E8F4FD;
+}
+
+/* Badges / Chips de Paralelos */
+
+.contenedor-badges-paralelos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    min-height: 32px;
+}
+
+.badge-paralelo {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #E8F4FD;
+    color: #2E86AB;
+    border-radius: 16px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.btn-remover-paralelo {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E86AB;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-remover-paralelo:hover {
+    background-color: rgba(46, 134, 171, 0.2);
+    color: #1a4d63;
+}
+
+.fila-agregar-paralelo {
+    margin-top: 4px;
+}
+
+/* ============================
+   Configuración Horario
+   ============================ */
+
+.grid-campos-horario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Vista previa de bloques */
+
+.seccion-vista-previa {
+    background-color: #FAFBFD;
+    border: 1px solid #E5E9F0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.cabecera-vista-previa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cabecera-vista-previa .etiqueta-campo {
+    margin-bottom: 0;
+}
+
+.contador-bloques {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2E86AB;
+}
+
+.contenedor-pildoras-horario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pildora-hora {
+    background-color: #F0F4F8;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #6D7588;
+    font-weight: 500;
+    border: 1px solid #E2E8F0;
+}
+
+/* Pie de tarjeta */
+
+.pie-tarjeta-horario {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-guardar-configuracion {
+    padding: 0 24px;
+}
+
+/* ============================
+   Toast Notificación (Oculto por defecto)
+   ============================ */
+
+.toast-notificacion {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    padding: 14px 18px;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #10B981;
+    z-index: 1000;
+}
+
+.toast-contenido {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast-icono-exito {
+    color: #10B981;
+    flex-shrink: 0;
+}
+
+.toast-mensaje {
+    font-size: 14px;
+    font-weight: 500;
+    color: #202435;
+}
+
+.toast-btn-cerrar {
+    background: none;
+    border: none;
+    color: #6D7588;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.toast-btn-cerrar:hover {
+    color: #202435;
+    background-color: #F0F4F8;
+}

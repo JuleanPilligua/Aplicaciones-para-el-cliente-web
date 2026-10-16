@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-sidebar">
+                <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
+                </div>
+            </div>
+            <span class="badge-sidebar">ADMIN PANEL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item activo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>
+                Dashboard
+            </a>
+            <a href="../gestion-usuarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                Usuarios
+            </a>
+            <a href="../gestion-materias/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h12"/></svg>
+                Materias
+            </a>
+            <a href="../periodos/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                Periodos
+            </a>
+            <a href="../configuracion/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.066 2.573c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.573 1.066c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.066 -2.573c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37a1.724 1.724 0 0 0 2.573 -1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+                Configuración
+            </a>
+            <a href="../generacion-horarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                Horarios
+            </a>
+        </nav>
+
+        <div class="sidebar-usuario">
+            <div class="avatar-usuario">AZ</div>
+            <div class="info-usuario">
+                <p class="p-nombre-usuario">Ana Zambrano</p>
+                <p class="p-rol-usuario">Administrador</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+        </div>
+
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+
+        <!-- Header principal -->
+        <div class="header-principal">
+            <div class="header-principal-texto">
+                <h1 class="h1-header-principal">Bienvenido, Administrador</h1>
+                <p class="p-header-principal">Resumen general del sistema</p>
+            </div>
+            <div class="header-principal-fecha">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6D7588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                <p id="fecha-actual"></p>
+            </div>
+        </div>
+
+        <!-- Tarjetas de estadísticas -->
+        <div class="estadisticas">
+            <div class="tarjeta-estadistica">
+                <div class="tarjeta-estadistica-icono icono-profesores">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E86AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                </div>
+                <p class="p-numero-estadistica" id="stat-profesores">0</p>
+                <p class="p-label-estadistica">Total Profesores</p>
+            </div>
+            <div class="tarjeta-estadistica">
+                <div class="tarjeta-estadistica-icono icono-estudiantes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64B88B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                </div>
+                <p class="p-numero-estadistica" id="stat-estudiantes">0</p>
+                <p class="p-label-estadistica">Total Estudiantes</p>
+            </div>
+            <div class="tarjeta-estadistica">
+                <div class="tarjeta-estadistica-icono icono-materias">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D69E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                </div>
+                <p class="p-numero-estadistica" id="stat-materias">0</p>
+                <p class="p-label-estadistica">Total Materias</p>
+            </div>
+            <div class="tarjeta-estadistica">
+                <div class="tarjeta-estadistica-icono icono-periodo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg>
+                </div>
+                <p class="p-numero-estadistica" id="stat-periodo">—</p>
+                <p class="p-label-estadistica">Periodo Activo</p>
+            </div>
+        </div>
+
+        <!-- Acciones rápidas -->
+        <div class="acciones-rapidas">
+            <h2 class="h2-acciones-rapidas">Acciones rápidas</h2>
+            <div class="acciones-rapidas-contenedor">
+                <div class="tarjeta-accion" onclick="location.href='../gestion-usuarios/index.html'">
+                    <div class="tarjeta-accion-izquierda">
+                        <div class="tarjeta-accion-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8596" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                        </div>
+                        <div class="tarjeta-accion-texto">
+                            <p class="p-titulo-accion">Gestionar Usuarios</p>
+                            <p class="p-descripcion-accion">Crear, editar y organizar cuentas</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6D7588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-flecha-accion"><path d="M9 6l6 6l-6 6"/></svg>
+                </div>
+                <div class="tarjeta-accion" onclick="location.href='../gestion-materias/index.html'">
+                    <div class="tarjeta-accion-izquierda">
+                        <div class="tarjeta-accion-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8596" stroke-width="2" stroke-linecap="round" stroke-|linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                        </div>
+                        <div class="tarjeta-accion-texto">
+                            <p class="p-titulo-accion">Crear Materias</p>
+                            <p class="p-descripcion-accion">Asignar materias y profesores</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6D7588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-flecha-accion"><path d="M9 6l6 6l-6 6"/></svg>
+                </div>
+                <div class="tarjeta-accion" onclick="location.href='../generacion-horarios/index.html'">
+                    <div class="tarjeta-accion-izquierda">
+                        <div class="tarjeta-accion-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                        </div>
+                        <div class="tarjeta-accion-texto">
+                            <p class="p-titulo-accion">Generar Horarios</p>
+                            <p class="p-descripcion-accion">Crear la planificación automática</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6D7588" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-flecha-accion"><path d="M9 6l6 6l-6 6"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección inferior: Periodo académico + Sin tareas pendientes -->
+        <div class="seccion-inferior">
+            <div class="tarjeta-periodo">
+                <div class="tarjeta-periodo-header">
+                    <p class="p-titulo-periodo">Periodo académico</p>
+                    <span class="badge-sin-periodo">Sin periodo</span>
+                </div>
+                <p class="p-numero-periodo">—</p>
+                <p class="p-fechas-periodo">No hay periodo activo configurado</p>
+                <button class="btn-planificacion" onclick="location.href='../configuracion/index.html'">Ver planificación</button>
+            </div>
+            <div class="tarjeta-tareas">
+                <div class="tarjeta-tareas-icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5l10 -10"/></svg>
+                </div>
+                <p class="p-titulo-tareas">Sin tareas pendientes</p>
+                <p class="p-descripcion-tareas">La configuración del periodo está al día.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

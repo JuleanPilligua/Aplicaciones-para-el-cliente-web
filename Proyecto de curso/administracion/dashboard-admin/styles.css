@@ -1,0 +1,444 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    color: black;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #1E1E2F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Header sidebar */
+
+.logo-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-logo-sidebar {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+
+.badge-sidebar {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 3px 8px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #1E1E2F;
+    background-color: #F6C343;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Navegación sidebar */
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 28px;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #A0AEC0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #2A2A3D;
+    color: #fff;
+}
+
+.nav-item.activo {
+    background-color: #2A2A3D;
+    color: #F6C343;
+    font-weight: 600;
+}
+
+/* Usuario sidebar */
+
+.sidebar-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #2A2A3D;
+    margin-top: 16px;
+}
+
+.avatar-usuario {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #2E86AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.info-usuario {
+    flex: 1;
+}
+
+.p-nombre-usuario {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.p-rol-usuario {
+    font-size: 11px;
+    color: #A0AEC0;
+    margin: 0;
+}
+
+.icono-usuario-opciones {
+    color: #A0AEC0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ============================
+   Contenido principal
+   ============================ */
+
+.contenido-principal {
+    margin-left: 220px;
+    padding: 32px 40px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+/* Header principal */
+
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+.h1-header-principal {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.p-header-principal {
+    font-size: 14px;
+    color: #6D7588;
+    margin: 4px 0 0 0;
+}
+
+.header-principal-fecha {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #6D7588;
+    white-space: nowrap;
+}
+
+.header-principal-fecha p {
+    margin: 0;
+}
+
+/* Tarjetas de estadísticas */
+
+.estadisticas {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.tarjeta-estadistica {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+}
+
+.tarjeta-estadistica-icono {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.icono-profesores {
+    background-color: #E8F4FD;
+    color: #2E86AB;
+}
+
+.icono-estudiantes {
+    background-color: #E8FDF0;
+    color: #38A169;
+}
+
+.icono-materias {
+    background-color: #FFF7E6;
+    color: #D69E2E;
+}
+
+.icono-periodo {
+    background-color: #EDE9FE;
+    color: #7C3AED;
+}
+
+.p-numero-estadistica {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.p-label-estadistica {
+    font-size: 13px;
+    color: #6D7588;
+    margin: 4px 0 0 0;
+}
+
+/* Acciones rápidas */
+
+.h2-acciones-rapidas {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 14px 0;
+}
+
+.acciones-rapidas {
+    margin-bottom: 28px;
+}
+
+.acciones-rapidas-contenedor {
+    display: flex;
+    gap: 16px;
+}
+
+.tarjeta-accion {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tarjeta-accion:hover {
+    box-shadow: 0 4px 12px rgba(16, 24, 40, 0.1);
+}
+
+.tarjeta-accion-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.tarjeta-accion-icono {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #F0F4F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6D7588;
+}
+
+.p-titulo-accion {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.p-descripcion-accion {
+    font-size: 12px;
+    color: #6D7588;
+    margin: 2px 0 0 0;
+}
+
+.icono-flecha-accion {
+    flex-shrink: 0;
+}
+
+/* Sección inferior */
+
+.seccion-inferior {
+    display: flex;
+    gap: 16px;
+}
+
+/* Tarjeta periodo académico */
+
+.tarjeta-periodo {
+    flex: 1;
+    background-color: #1E1E2F;
+    border-radius: 12px;
+    padding: 24px;
+    color: #fff;
+}
+
+.tarjeta-periodo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.p-titulo-periodo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #A0AEC0;
+    margin: 0;
+}
+
+.badge-activo {
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #38A169;
+    background-color: rgba(56, 161, 105, 0.15);
+    border-radius: 12px;
+}
+
+.badge-sin-periodo {
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #A0AEC0;
+    background-color: rgba(160, 174, 192, 0.15);
+    border-radius: 12px;
+}
+
+.p-numero-periodo {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 4px 0 6px 0;
+    color: #F6C343;
+}
+
+.p-fechas-periodo {
+    font-size: 13px;
+    color: #A0AEC0;
+    margin: 0 0 18px 0;
+}
+
+.btn-planificacion {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: #1E1E2F;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-planificacion:hover {
+    background-color: #E2E8F0;
+}
+
+/* Tarjeta sin tareas pendientes */
+
+.tarjeta-tareas {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta-tareas-icono {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #E8FDF0;
+    color: #38A169;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.p-titulo-tareas {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.p-descripcion-tareas {
+    font-size: 13px;
+    color: #6D7588;
+    margin: 4px 0 0 0;
+}
+
+/* ============================
+   Estado Vacío
+   ============================ */
+
+.estado-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    color: #6D7588;
+}
+
+.p-estado-vacio {
+    font-size: 15px;
+    font-weight: 600;
+    color: #202435;
+    margin: 12px 0 4px 0;
+}
+
+.p-estado-vacio-sub {
+    font-size: 13px;
+    color: #6D7588;
+    margin: 0;
+}
+

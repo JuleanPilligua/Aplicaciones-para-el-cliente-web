@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodos Académicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-sidebar">
+                <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
+            </div>
+            <span class="badge-sidebar">ADMIN PANEL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="../dashboard-admin-completado/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>
+                Dashboard
+            </a>
+            <a href="../gestion-usuarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                Usuarios
+            </a>
+            <a href="../gestion-materias/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h12"/></svg>
+                Materias
+            </a>
+            <a href="#" class="nav-item activo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                Periodos
+            </a>
+            <a href="../configuracion/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.066 2.573c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.573 1.066c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.066 -2.573c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37a1.724 1.724 0 0 0 2.573 -1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+                Configuración
+            </a>
+            <a href="../generacion-horarios/" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                Horarios
+            </a>
+        </nav>
+
+        <div class="sidebar-usuario">
+            <div class="avatar-usuario">AZ</div>
+            <div class="info-usuario">
+                <p class="p-nombre-usuario">Ana Zambrano</p>
+                <p class="p-rol-usuario">Administrador</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+        </div>
+
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal">
+
+        <!-- Header -->
+        <div class="header-pagina">
+            <div class="header-textos">
+                <h1 class="titulo-pagina">Periodos Académicos</h1>
+                <p class="subtitulo-pagina">Gestiona los ciclos lectivos de la universidad</p>
+            </div>
+            <button class="boton-nuevo-periodo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                Nuevo Periodo
+            </button>
+        </div>
+
+        <!-- Banner informativo -->
+        <div class="banner-informativo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-info"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <p class="texto-banner">Solo un periodo puede estar activo. Los horarios y asignaciones se asocian al periodo seleccionado.</p>
+        </div>
+
+        <!-- Lista de periodos -->
+        <div class="lista-periodos">
+
+            <!-- Periodo activo -->
+            <div class="tarjeta-periodo tarjeta-periodo-activo">
+                <div class="periodo-info">
+                    <div class="periodo-nombre-badge">
+                        <h3 class="nombre-periodo">2026-1S</h3>
+                        <span class="badge-activo">Activo</span>
+                    </div>
+                    <p class="periodo-fechas">06 abril — 28 agosto</p>
+                </div>
+                <div class="periodo-acciones">
+                    <button class="boton-desactivar">Desactivar</button>
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Periodo inactivo 1 -->
+            <div class="tarjeta-periodo">
+                <div class="periodo-info">
+                    <div class="periodo-nombre-badge">
+                        <h3 class="nombre-periodo">2025-2S</h3>
+                    </div>
+                    <p class="periodo-fechas">13 octubre 2025 — 19 febrero 2026</p>
+                </div>
+                <div class="periodo-acciones">
+                    <button class="boton-activar">Activar</button>
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Periodo inactivo 2 -->
+            <div class="tarjeta-periodo">
+                <div class="periodo-info">
+                    <div class="periodo-nombre-badge">
+                        <h3 class="nombre-periodo">2025-1S</h3>
+                    </div>
+                    <p class="periodo-fechas">07 abril — 28 agosto 2025</p>
+                </div>
+                <div class="periodo-acciones">
+                    <button class="boton-activar">Activar</button>
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Periodo inactivo 3 con badge -->
+            <div class="tarjeta-periodo">
+                <div class="periodo-info">
+                    <div class="periodo-nombre-badge">
+                        <h3 class="nombre-periodo">2024-2S</h3>
+                        <span class="badge-inactivo">Inactivo</span>
+                    </div>
+                    <p class="periodo-fechas">14 octubre 2024 — 19 febrero 2025 · 1748 estudiantes</p>
+                </div>
+                <div class="periodo-acciones">
+                    <button class="boton-activar">Activar</button>
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Modal Nuevo Periodo -->
+    <div class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-titulo">Nuevo Periodo</h2>
+                <button class="modal-cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="modal-cuerpo">
+                <div class="campo-formulario">
+                    <label class="etiqueta-campo" for="nombre-periodo">Nombre del periodo</label>
+                    <input type="text" id="nombre-periodo" class="input-campo" placeholder="Ej. 2026-2S">
+                    <p class="texto-ayuda">Usa el formato año-semestre. El nuevo periodo se creará como inactivo.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="boton-cancelar">Cancelar</button>
+                <button class="boton-crear-periodo">Crear periodo</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

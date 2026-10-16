@@ -1,0 +1,460 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    color: black;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #1E1E2F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img-logo-sidebar {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.badge-sidebar {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px 8px;
+    font-size: 9px;
+    font-weight: 700;
+    color: #1E1E2F;
+    background-color: #F6C343;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 28px;
+    flex: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #A0AEC0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #2A2A3D;
+    color: #fff;
+}
+
+.nav-item.activo {
+    background-color: #2A2A3D;
+    color: #F6C343;
+    font-weight: 600;
+}
+
+.sidebar-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #2A2A3D;
+    margin-top: 16px;
+}
+
+.avatar-usuario {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #2E86AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.info-usuario {
+    flex: 1;
+}
+
+.p-nombre-usuario {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.p-rol-usuario {
+    font-size: 11px;
+    color: #A0AEC0;
+    margin: 0;
+}
+
+.icono-usuario-opciones {
+    color: #A0AEC0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.contenido-principal {
+    margin-left: 220px;
+    padding: 32px 40px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+/* Header de la página */
+
+.header-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.header-textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-pagina {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #202435;
+}
+
+.subtitulo-pagina {
+    font-size: 14px;
+    color: #6D7588;
+    margin: 4px 0 0 0;
+}
+
+.boton-nuevo-periodo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.boton-nuevo-periodo:hover {
+    background-color: #256f8e;
+}
+
+/* Banner informativo */
+
+.banner-informativo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #EBF8FF;
+    color: #2B6CB0;
+    border: 1px solid #BEE3F8;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+}
+
+.icono-info {
+    flex-shrink: 0;
+    color: #2B6CB0;
+}
+
+.texto-banner {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Lista de periodos */
+
+.lista-periodos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tarjeta-periodo {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta-periodo-activo {
+    border-left: 4px solid #38A169;
+}
+
+.periodo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.periodo-nombre-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nombre-periodo {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #202435;
+}
+
+.badge-activo {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #38A169;
+    background-color: rgba(56, 161, 105, 0.15);
+    border-radius: 12px;
+    padding: 2px 10px;
+}
+
+.badge-inactivo {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #6D7588;
+    background-color: #F0F4F8;
+    border-radius: 12px;
+    padding: 2px 10px;
+}
+
+.periodo-fechas {
+    font-size: 13px;
+    color: #6D7588;
+    margin: 0;
+}
+
+.periodo-acciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.boton-activar {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.boton-activar:hover {
+    background-color: #256f8e;
+}
+
+.boton-desactivar {
+    background-color: transparent;
+    color: #2E86AB;
+    border: 1px solid #2E86AB;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.boton-desactivar:hover {
+    background-color: rgba(46, 134, 171, 0.08);
+}
+
+.boton-eliminar {
+    background-color: #E53E3E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    background-color: #c53030;
+}
+
+/* Modal */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 32px rgba(16, 24, 40, 0.12);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px 0 24px;
+}
+
+.modal-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: #202435;
+}
+
+.modal-cerrar {
+    background: none;
+    border: none;
+    color: #6D7588;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.modal-cerrar:hover {
+    background-color: #f0f4f8;
+    color: #202435;
+}
+
+.modal-cuerpo {
+    padding: 20px 24px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.etiqueta-campo {
+    font-size: 13px;
+    font-weight: 600;
+    color: #202435;
+}
+
+.input-campo {
+    padding: 10px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #202435;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-campo::placeholder {
+    color: #A0AEC0;
+}
+
+.input-campo:focus {
+    border-color: #2E86AB;
+    box-shadow: 0 0 0 3px rgba(46, 134, 171, 0.15);
+}
+
+.texto-ayuda {
+    font-size: 12px;
+    color: #6D7588;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 0 24px 20px 24px;
+}
+
+.boton-cancelar {
+    background: none;
+    border: none;
+    color: #6D7588;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.boton-cancelar:hover {
+    background-color: #f0f4f8;
+    color: #202435;
+}
+
+.boton-crear-periodo {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.boton-crear-periodo:hover {
+    background-color: #256f8e;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios - ULEAM Horarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo-sidebar">
+                <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
+            </div>
+            <span class="badge-sidebar">ADMIN PANEL</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="../dashboard-admin-completado/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z"/><path d="M14 4h6v6h-6z"/><path d="M4 14h6v6H4z"/><path d="M14 14h6v6h-6z"/></svg>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item activo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/></svg>
+                Usuarios
+            </a>
+            <a href="../gestion-materias/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h12"/></svg>
+                Materias
+            </a>
+            <a href="../periodos/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+                Periodos
+            </a>
+            <a href="../configuracion/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.066 2.573c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.573 1.066c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.066 -2.573c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37a1.724 1.724 0 0 0 2.573 -1.066z"/><circle cx="12" cy="12" r="3"/></svg>
+                Configuración
+            </a>
+            <a href="../generacion-horarios/index.html" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
+                Horarios
+            </a>
+        </nav>
+
+        <div class="sidebar-usuario">
+            <div class="avatar-usuario">AZ</div>
+            <div class="info-usuario">
+                <p class="p-nombre-usuario">Ana Zambrano</p>
+                <p class="p-rol-usuario">Administrador</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+        </div>
+
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="contenido-principal">
+        
+        <!-- Header Principal -->
+        <header class="header-principal">
+            <div class="titulo-subtitulo-header">
+                <h1 class="titulo-seccion">Gestión de Usuarios</h1>
+                <p class="subtitulo-seccion">Administra profesores y estudiantes registrados</p>
+            </div>
+            <button type="button" class="boton-nuevo-usuario" id="btn-nuevo-usuario">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                Nuevo Usuario
+            </button>
+        </header>
+
+        <!-- Barra de Filtros y Búsqueda -->
+        <div class="barra-filtros">
+            <div class="pestanas-filtro">
+                <button type="button" class="boton-filtro activo">Todos</button>
+            </div>
+            <div class="contenedor-busqueda">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-busqueda"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" class="input-busqueda" placeholder="Buscar por nombre o cédula">
+            </div>
+        </div>
+
+        <!-- Tarjeta de Contenedor de Tabla -->
+        <div class="tarjeta-tabla">
+            <table class="tabla-usuarios">
+                <thead>
+                    <tr>
+                        <th class="col-usuario">USUARIO</th>
+                        <th class="col-cedula">CÉDULA</th>
+                        <th class="col-rol">ROL</th>
+                        <th class="col-nivel">NIVEL/PARALELO</th>
+                        <th class="col-acciones">ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo-usuarios">
+                    <tr class="fila-vacia">
+                        <td colspan="5">
+                            <div class="estado-vacio">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <p class="p-estado-vacio">No hay usuarios registrados</p>
+                                <p class="p-estado-vacio-sub">Haz clic en "+ Nuevo Usuario" para agregar uno.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- Modal 'Nuevo Usuario' (Oculto por defecto con display: none) -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-contenedor">
+            <div class="modal-header">
+                <h2 class="modal-titulo">Nuevo Usuario</h2>
+                <button type="button" class="boton-cerrar-modal" id="btn-cerrar-modal" title="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            
+            <form class="modal-formulario" id="formulario-usuario">
+                <div class="grupo-formulario">
+                    <label class="label-formulario" for="nombre-completo">Nombre completo</label>
+                    <input type="text" id="nombre-completo" class="input-formulario" placeholder="Ej. Carlos Mendoza">
+                    <span class="error" id="errorNombre"></span>
+                </div>
+
+                <div class="fila-formulario">
+                    <div class="grupo-formulario">
+                        <label class="label-formulario" for="cedula">Cédula</label>
+                        <input type="text" id="cedula" class="input-formulario" placeholder="10 dígitos">
+                        <span class="error" id="errorCedula"></span>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="label-formulario" for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" class="input-formulario" placeholder="usuario@uleam.edu.ec">
+                        <span class="error" id="errorCorreo"></span>
+                    </div>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="label-formulario" for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" class="input-formulario" placeholder="Mínimo 8 caracteres">
+                    <span class="error" id="errorContrasena"></span>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label class="label-formulario" for="rol">Rol</label>
+                    <select id="rol" class="select-formulario">
+                        <option value="estudiante" selected>Estudiante</option>
+                        <option value="profesor">Profesor</option>
+                        <option value="administrador">Administrador</option>
+                    </select>
+                </div>
+
+                <div class="fila-formulario">
+                    <div class="grupo-formulario">
+                        <label class="label-formulario" for="nivel">Nivel</label>
+                        <select id="nivel" class="select-formulario">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label class="label-formulario" for="paralelo">Paralelo</label>
+                        <select id="paralelo" class="select-formulario">
+                            <option value="A" selected>A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-acciones">
+                    <button type="button" class="boton-cancelar" id="btn-cancelar">Cancelar</button>
+                    <button type="submit" class="boton-guardar">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notificación Toast (Oculta por defecto con display: none o posicionado abajo-derecha) -->
+    <div class="toast-notificacion" id="toast-notificacion">
+        <div class="toast-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <span class="toast-mensaje">Usuario guardado correctamente</span>
+        <button type="button" class="toast-cerrar" id="toast-cerrar" title="Cerrar notificación">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
