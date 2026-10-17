@@ -301,6 +301,32 @@ body {
     vertical-align: middle;
 }
 
+/* Estado Vacío de la Tabla */
+.fila-vacia td {
+    text-align: center;
+    padding: 30px !important;
+}
+
+.estado-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-estado-vacio {
+    font-weight: 600;
+    margin: 0;
+    color: #6D7588;
+    font-size: 13px;
+}
+
+.p-estado-vacio-sub {
+    font-size: 12px;
+    margin: 4px 0 0 0;
+    color: #6D7588;
+}
+
 .celda-usuario {
     display: flex;
     align-items: center;
@@ -318,13 +344,8 @@ body {
     font-weight: 700;
     color: #ffffff;
     flex-shrink: 0;
+    background-color: #2E86AB;
 }
-
-.avatar-verde { background-color: #10B981; }
-.avatar-azul { background-color: #2E86AB; }
-.avatar-naranja { background-color: #F59E0B; }
-.avatar-morado { background-color: #8B5CF6; }
-.avatar-cyan { background-color: #06B6D4; }
 
 .info-nombre-usuario {
     display: flex;
