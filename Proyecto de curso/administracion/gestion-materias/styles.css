@@ -407,66 +407,6 @@ body {
     background-color: #FEE2E2;
 }
 
-/* Pie de la tabla y paginación */
-
-.pie-tabla {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 20px;
-    border-top: 1px solid #EDF2F7;
-    background-color: #ffffff;
-}
-
-.p-contador-tabla {
-    font-size: 13px;
-    color: #6D7588;
-    margin: 0;
-}
-
-.paginacion {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.btn-pagina {
-    min-width: 32px;
-    height: 32px;
-    padding: 0 8px;
-    border: 1px solid #E2E8F0;
-    background-color: #ffffff;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-    color: #6D7588;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-}
-
-.btn-pagina:hover {
-    background-color: #F8FAFC;
-    color: #202435;
-    border-color: #CBD5E1;
-}
-
-.btn-pagina.activo {
-    background-color: #2E86AB;
-    border-color: #2E86AB;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.puntos-paginacion {
-    color: #A0AEC0;
-    font-size: 13px;
-    padding: 0 4px;
-}
-
 /* ============================
    Modal: Nueva Materia
    ============================ */
