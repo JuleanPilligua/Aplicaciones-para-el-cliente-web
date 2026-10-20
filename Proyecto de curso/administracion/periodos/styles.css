@@ -458,3 +458,51 @@ body {
 .boton-crear-periodo:hover {
     background-color: #256f8e;
 }
+
+/* Rango de Fechas  */
+
+.fila-fechas {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.campo-mitad {
+    flex: 1;
+}
+
+/* Errores de Validación */
+
+.input-error {
+    border-color: #E53E3E !important;
+}
+
+.error {
+    color: #E53E3E;
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Toast Notificación */
+
+.toast-notificacion {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #1E1E2F;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(16, 24, 40, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 1100;
+}
+
+.icono-toast {
+    color: #10B981;
+}

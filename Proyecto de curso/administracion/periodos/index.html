@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -47,7 +47,7 @@
                 Configuración
             </a>
 
-            <a href="../generacion-horarios/" class="nav-item">
+            <a href="../generacion-horarios/index.html" class="nav-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M8 15h2v2H8z"/></svg>
                 Horarios
             </a>
@@ -55,11 +55,11 @@
         </nav>
 
         <div class="sidebar-usuario">
-            <div class="avatar-usuario">AZ</div>
+            <div class="avatar-usuario" id="sidebar-avatar">AZ</div>
 
             <div class="info-usuario">
-                <p class="p-nombre-usuario">Ana Zambrano</p>
-                <p class="p-rol-usuario">Administrador</p>
+                <p class="p-nombre-usuario" id="sidebar-nombre">Ana Zambrano</p>
+                <p class="p-rol-usuario" id="sidebar-rol">Administrador</p>
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
@@ -98,24 +98,40 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
                 </button>
             </div>
-            <form id="formulario-periodo">
+            <form id="formulario-periodo" novalidate>
                 <div class="modal-cuerpo">
                     <div class="campo-formulario">
                         <label class="etiqueta-campo" for="nombre-periodo">Nombre del periodo</label>
-                        <input type="text" id="nombre-periodo" class="input-campo" placeholder="Ej. 2026-2S" required>
-                        <p class="texto-ayuda">Usa el formato año-semestre. El nuevo periodo se creará como inactivo.</p>
+                        <input type="text" id="nombre-periodo" class="input-campo" placeholder="Ej. 2026-2S">
+                        <span class="error" id="errorNombrePeriodo"></span>
+                        <p class="texto-ayuda">Usa el formato año-semestre (Ej. 2026-1S). El nuevo periodo se creará como inactivo.</p>
                     </div>
-                    <div class="campo-formulario">
-                        <label class="etiqueta-campo" for="fechas-periodo">Rango de fechas</label>
-                        <input type="text" id="fechas-periodo" class="input-campo" placeholder="Ej. 06 abril — 28 agosto" required>
+
+                    <div class="fila-fechas">
+                        <div class="campo-formulario campo-mitad">
+                            <label class="etiqueta-campo" for="fecha-inicio">Fecha de inicio</label>
+                            <input type="date" id="fecha-inicio" class="input-campo">
+                            <span class="error" id="errorFechaInicio"></span>
+                        </div>
+                        <div class="campo-formulario campo-mitad">
+                            <label class="etiqueta-campo" for="fecha-fin">Fecha de fin</label>
+                            <input type="date" id="fecha-fin" class="input-campo">
+                            <span class="error" id="errorFechaFin"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="boton-cancelar" id="btn-cancelar">Cancelar</button>
-                    <button type="submit" class="boton-crear-periodo">Crear periodo</button>
+                    <button type="submit" class="boton-crear-periodo" id="btn-crear-periodo">Crear periodo</button>
                 </div>
             </form>
         </div>
+    </div>
+
+    <!-- Notificación Toast -->
+    <div class="toast-notificacion" id="toast-notificacion" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-toast"><path d="M20 6 9 17l-5-5"/></svg>
+        <span class="toast-mensaje" id="toast-mensaje">Operación realizada con éxito</span>
     </div>
 
     <script src="script.js"></script>
