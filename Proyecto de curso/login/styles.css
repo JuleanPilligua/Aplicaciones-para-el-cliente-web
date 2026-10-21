@@ -12,8 +12,8 @@ body {
 .formulario {
     color: #fff;
     width: 480px;
-    min-height: 544px; /* Permite que mantenga un tamaño base, pero que crezca si es necesario */
-    height: auto;      /* Se adapta dinámicamente al contenido y los errores */
+    min-height: 544px; 
+    height: auto; 
     padding: 42px 48px;
     border-radius: 16px;
     box-shadow: 0 20px 48px 0 rgba(16, 24, 40, 0.19);
