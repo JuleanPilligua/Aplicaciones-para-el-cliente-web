@@ -49,10 +49,10 @@
         </nav>
 
         <div class="sidebar-usuario">
-            <div class="avatar-usuario">AZ</div>
+            <div class="avatar-usuario" id="sidebar-avatar">AZ</div>
             <div class="info-usuario">
-                <p class="p-nombre-usuario">Ana Zambrano</p>
-                <p class="p-rol-usuario">Administrador</p>
+                <p class="p-nombre-usuario" id="sidebar-nombre">Ana Zambrano</p>
+                <p class="p-rol-usuario" id="sidebar-rol">Administrador</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
         </div>
@@ -119,7 +119,6 @@
 
                     <div class="cuerpo-tarjeta">
                         <label class="etiqueta-campo">Paralelos activos</label>
-                        <!-- ID AGREGADO Y REGISTROS DINÁMICOS REMOVIDOS -->
                         <div class="contenedor-badges-paralelos" id="contenedor-paralelos">
                         </div>
 
@@ -132,7 +131,7 @@
 
             </div>
 
-            <!-- Fila inferior: Tarjeta Horario (ancho completo) -->
+            <!-- Fila inferior: Tarjeta Horario -->
             <section class="tarjeta-configuracion tarjeta-completa">
                 <div class="cabecera-tarjeta">
                     <div class="icono-tarjeta">
@@ -147,8 +146,7 @@
                     </div>
                 </div>
 
-                <div class="cuerpo-tarjeta">
-                    <!-- Tres campos en una fila -->
+                <div class="cuerpo-tarjeta"
                     <div class="grid-campos-horario">
                         <div class="campo-grupo">
                             <label class="etiqueta-campo" for="select-hora-inicio">Hora de inicio</label>
@@ -189,7 +187,6 @@
                             <span class="etiqueta-campo">Vista previa de bloques generados</span>
                             <span class="contador-bloques" id="contador-bloques">0 bloques</span>
                         </div>
-                        <!-- ID AGREGADO Y PÍLDORAS ESTÁTICAS REMOVIDAS -->
                         <div class="contenedor-pildoras-horario" id="contenedor-bloques">
                         </div>
                     </div>
