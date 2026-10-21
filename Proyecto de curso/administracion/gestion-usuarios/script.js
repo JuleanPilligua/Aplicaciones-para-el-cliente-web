@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 11. ELIMINAR USUARIO POR CÓDIGO
+    // 11. ELIMINAR USUARIO POR CÓDIGO 
     window.removerUsuarioPorCodigo = function (codigo) {
         const usuario = coleccionUsuarios.find(u => u.codigo === codigo);
         const nombreUsuario = usuario ? usuario.nombre : 'el usuario';
