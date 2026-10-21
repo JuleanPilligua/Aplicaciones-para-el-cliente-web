@@ -683,3 +683,42 @@ body {
 .toast-cerrar:hover {
     color: #202435;
 }
+
+/* Errores de Validación y Badges */
+
+.input-error {
+    border-color: #E53E3E !important;
+}
+
+.error {
+    color: #E53E3E;
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
+}
+
+.badge-administrador {
+    background-color: #EDE9FE;
+    color: #6D28D9;
+}
+
+.detalle-materias { 
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1E40AF;
+    background-color: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    padding: 3px 8px;
+    border-radius: 6px;
+    max-width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detalle-admin {
+    color: #94A3B8;
+    font-size: 13px;
+    font-style: italic;
+}
