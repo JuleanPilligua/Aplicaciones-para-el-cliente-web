@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,6 @@
         <div class="sidebar-header">
             <div class="logo-sidebar">
                 <img src="../../img/logo-uleam.png" alt="logo de la uleam" class="img-logo-sidebar">
-                </div>
             </div>
             <span class="badge-sidebar">ADMIN PANEL</span>
         </div>
@@ -50,10 +49,10 @@
         </nav>
 
         <div class="sidebar-usuario">
-            <div class="avatar-usuario">AZ</div>
+            <div class="avatar-usuario" id="sidebar-avatar">AZ</div>
             <div class="info-usuario">
-                <p class="p-nombre-usuario">Ana Zambrano</p>
-                <p class="p-rol-usuario">Administrador</p>
+                <p class="p-nombre-usuario" id="sidebar-nombre">Ana Zambrano</p>
+                <p class="p-rol-usuario" id="sidebar-rol">Administrador</p>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icono-usuario-opciones"><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
         </div>
@@ -66,7 +65,7 @@
         <!-- Header principal -->
         <div class="header-principal">
             <div class="header-principal-texto">
-                <h1 class="h1-header-principal">Bienvenido, Administrador</h1>
+                <h1 class="h1-header-principal" id="saludo-admin">Bienvenido, Administrador</h1>
                 <p class="p-header-principal">Resumen general del sistema</p>
             </div>
             <div class="header-principal-fecha">
@@ -126,7 +125,7 @@
                 <div class="tarjeta-accion" onclick="location.href='../gestion-materias/index.html'">
                     <div class="tarjeta-accion-izquierda">
                         <div class="tarjeta-accion-icono">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8596" stroke-width="2" stroke-linecap="round" stroke-|linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8596" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-book"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>
                         </div>
                         <div class="tarjeta-accion-texto">
                             <p class="p-titulo-accion">Crear Materias</p>
@@ -155,11 +154,11 @@
             <div class="tarjeta-periodo">
                 <div class="tarjeta-periodo-header">
                     <p class="p-titulo-periodo">Periodo académico</p>
-                    <span class="badge-sin-periodo">Sin periodo</span>
+                    <span class="badge-sin-periodo" id="periodo-badge">Sin periodo</span>
                 </div>
-                <p class="p-numero-periodo">—</p>
-                <p class="p-fechas-periodo">No hay periodo activo configurado</p>
-                <button class="btn-planificacion" onclick="location.href='../configuracion/index.html'">Ver planificación</button>
+                <p class="p-numero-periodo" id="periodo-nombre">—</p>
+                <p class="p-fechas-periodo" id="periodo-fechas">No hay periodo activo configurado</p>
+                <button class="btn-planificacion" onclick="location.href='../periodos/index.html'">Ver planificación</button>
             </div>
             <div class="tarjeta-tareas">
                 <div class="tarjeta-tareas-icono">
