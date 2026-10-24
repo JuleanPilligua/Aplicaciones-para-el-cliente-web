@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ==========================================
+
     // 1. REFERENCIAS AL DOM
-    // ==========================================
     const inputNiveles = document.getElementById('input-niveles');
     const btnGuardarNiveles = document.getElementById('btn-guardar-niveles');
 
@@ -21,9 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnCerrarToast = document.getElementById('toast-cerrar');
     let timeoutToast = null;
 
-    // ==========================================
-    // 2. ESTADO DE LA APLICACIÓN (LocalStorage)
-    // ==========================================
+    // Cargar usuario en sidebar desde sesión si existe
+    try {
+        const sesion = JSON.parse(localStorage.getItem('usuarioSesion'));
+        if (sesion && sesion.nombre) {
+            const elNom = document.getElementById('sidebar-nombre');
+            const elRol = document.getElementById('sidebar-rol');
+            const elAv = document.getElementById('sidebar-avatar');
+            if (elNom) elNom.textContent = sesion.nombre;
+            if (elRol) elRol.textContent = sesion.rol || 'Administrador';
+            if (elAv) elAv.textContent = sesion.iniciales || 'AZ';
+        }
+    } catch (e) {}
+
+    // 2. ESTADO DE LA APLICACIÓN 
     const configuracionPredeterminada = {
         cantidadNiveles: 10,
         paralelosActivos: ['A', 'B', 'C'],
@@ -40,9 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('configuracionSistema', JSON.stringify(configuracionSistema));
     };
 
-    // ==========================================
     // 3. SISTEMA DE NOTIFICACIONES TOAST
-    // ==========================================
     const mostrarNotificacion = (mensaje) => {
         if (!notificacionToast) return;
         if (timeoutToast) clearTimeout(timeoutToast);
@@ -62,9 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnCerrarToast) btnCerrarToast.addEventListener('click', ocultarNotificacion);
 
-    // ==========================================
     // 4. LÓGICA DE NIVELES
-    // ==========================================
     const cargarNiveles = () => {
         if (inputNiveles) inputNiveles.value = configuracionSistema.cantidadNiveles;
     };
@@ -82,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
     // 5. LÓGICA DE PARALELOS
-    // ==========================================
     const renderizarParalelos = () => {
         if (!contenedorParalelos) return;
         contenedorParalelos.innerHTML = '';
@@ -104,10 +108,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const agregarParalelo = () => {
         const nuevaLetra = inputNuevoParalelo.value.trim().toUpperCase();
-        if (!nuevaLetra) return;
 
+        // 1. Comprueba que el campo no esté vacío
+        if (nuevaLetra === '') {
+            mostrarNotificacion('Por favor ingresa una letra para el paralelo');
+            return;
+        }
+
+        // 2. Validación con isNaN (Opción 2): si !isNaN, es un número
+        if (!isNaN(nuevaLetra)) {
+            mostrarNotificacion('No puedes ingresar números como paralelo');
+            return;
+        }
+
+        // 3. Comprobar que no exista duplicado
         if (configuracionSistema.paralelosActivos.includes(nuevaLetra)) {
-            alert('Este paralelo ya existe.');
+            mostrarNotificacion(`El paralelo "${nuevaLetra}" ya existe`);
             return;
         }
 
@@ -126,15 +142,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (btnAgregarParalelo) btnAgregarParalelo.addEventListener('click', agregarParalelo);
+
     if (inputNuevoParalelo) {
+        // Al presionar Enter, intentar agregar el paralelo
         inputNuevoParalelo.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') agregarParalelo();
+            if (e.key === 'Enter') {
+                agregarParalelo();
+            }
+        });
+
+        // Convertir automáticamente lo escrito a mayúsculas
+        inputNuevoParalelo.addEventListener('input', (e) => {
+            e.target.value = e.target.value.toUpperCase();
         });
     }
 
-    // ==========================================
     // 6. LÓGICA DE VISTA PREVIA Y BLOQUES DE HORARIO
-    // ==========================================
     const cargarValoresHorario = () => {
         if (selectHoraInicio) selectHoraInicio.value = configuracionSistema.horario.horaInicio;
         if (selectHoraFin) selectHoraFin.value = configuracionSistema.horario.horaFin;
@@ -205,9 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
     // 7. INICIALIZACIÓN
-    // ==========================================
     cargarNiveles();
     renderizarParalelos();
     cargarValoresHorario();

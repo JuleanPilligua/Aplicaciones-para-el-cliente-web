@@ -130,9 +130,7 @@ body {
     flex-shrink: 0;
 }
 
-/* ============================
-   Contenido principal
-   ============================ */
+/* Contenido principal */
 
 .contenido-principal {
     margin-left: 220px;
@@ -348,6 +346,15 @@ body {
     border-radius: 12px;
 }
 
+.badge-periodo-activo {
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #15803D;
+    background-color: #DCFCE7;
+    border-radius: 12px;
+}
+
 .p-numero-periodo {
     font-size: 36px;
     font-weight: 700;
@@ -416,9 +423,7 @@ body {
     margin: 4px 0 0 0;
 }
 
-/* ============================
-   Estado Vacío
-   ============================ */
+/* Estado Vacío */
 
 .estado-vacio {
     display: flex;

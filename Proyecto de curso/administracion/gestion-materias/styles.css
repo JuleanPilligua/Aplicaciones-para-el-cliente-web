@@ -6,9 +6,7 @@ body {
     color: black;
 }
 
-/* ============================
-   Sidebar
-   ============================ */
+/* Sidebar */
 
 .sidebar {
     width: 220px;
@@ -132,9 +130,7 @@ body {
     flex-shrink: 0;
 }
 
-/* ============================
-   Contenido principal
-   ============================ */
+/* Contenido principal */
 
 .contenido-principal {
     margin-left: 220px;
@@ -407,9 +403,7 @@ body {
     background-color: #FEE2E2;
 }
 
-/* ============================
-   Modal: Nueva Materia
-   ============================ */
+/* Modal: Nueva Materia */
 
 .modal-overlay {
     position: fixed;
@@ -623,9 +617,7 @@ body {
     box-shadow: 0 3px 8px rgba(46, 134, 171, 0.3);
 }
 
-/* ============================
-   Toast de notificación
-   ============================ */
+/* Toast de notificación */
 
 .toast-notificacion {
     position: fixed;
@@ -650,4 +642,78 @@ body {
 
 .p-toast-mensaje {
     color: #ffffff;
+}
+
+/* Panel de Filtros */
+
+.panel-filtros {
+    background-color: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.04);
+}
+
+.grupo-filtro {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grupo-filtro label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4A5568;
+}
+
+.select-filtro {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #202435;
+    background-color: #F8FAFC;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.select-filtro:focus {
+    border-color: #2E86AB;
+}
+
+.btn-limpiar-filtros {
+    background: transparent;
+    border: none;
+    color: #2E86AB;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.btn-filtrar.activo {
+    background-color: #2E86AB;
+    color: #ffffff;
+    border-color: #2E86AB;
+}
+
+/* Errores de Validación */
+
+.input-error {
+    border-color: #E53E3E !important;
+}
+
+.error {
+    color: #E53E3E;
+    font-size: 11px;
+    margin-top: 4px;
+    display: block;
 }
